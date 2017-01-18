@@ -8,40 +8,24 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },        
         fields: {
-            firstName: {
-             message: 'The first name is not valid',
+            name: {
+             message: 'Name is not valid',
                 validators: {
                     notEmpty: {
-                        message: 'The first name is required and cannot be empty'
+                        message: 'Name is required and cannot be empty'
                     },
                     stringLength: {
                         min: 1,
                         max: 30,
-                        message: 'The first name must be more than 1 and less than 30 characters long'
+                        message: 'Name must be more than 1 and less than 30 characters long'
                     },
                     regexp: {
                         regexp: /^[A-z]+$/,
-                        message: 'The first name can only accept alphabetical input'
+                        message: 'Name can only accept alphabetical input'
                     },
                 }
             },
-            lastName: {
-                message: 'Last Name is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'Last Name is required and cannot be empty'
-                    },
-                    stringLength: {
-                        min: 1,
-                        max: 30,
-                        message: 'Last Name must be more than 1 and less than 30 characters long'
-                    },
-                    regexp: {
-                        regexp: /^[A-z]+$/,
-                        message: 'Last Names can only consist of alphabetical characters'
-                    },
-                }
-            },
+          
             email: {
                 validators: {
                     notEmpty: {
